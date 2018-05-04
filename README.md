@@ -1,6 +1,11 @@
 # glossary-manager
 A sample Angular project to manage glossaries
 
+## Status
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://en.wikipedia.org/wiki/MIT_License)
+[![Build Status](https://travis-ci.org/bmaggi/glossary-manager.svg?branch=master)](https://travis-ci.org/bmaggi/glossary-manager)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
