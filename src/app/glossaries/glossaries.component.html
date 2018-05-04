@@ -1,0 +1,20 @@
+<div>
+<!--
+<ul class="glossaries">
+ <li *ngFor="let glossary of glossaries">
+     <a routerLink="/glossary/{{glossary.id}}">
+     <span class="badge">{{glossary.id}}</span> {{glossary.name}}
+    </a>
+    
+  </li>
+</ul>
+-->
+<table class="glossaries">
+  <tr *ngFor="let glossary of glossaries">
+    <td><a routerLink="/glossary/{{glossary.id}}"> {{glossary.name}} </a></td>
+    <td>{{glossary.description}}</td>
+  </tr>
+</table>
+
+<!--<app-glossary [glossary]="selectedGlossary"></app-glossary> -->
+

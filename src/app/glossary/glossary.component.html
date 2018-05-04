@@ -1,0 +1,23 @@
+<div *ngIf="glossary">
+<h2>{{ glossary.name | uppercase }} Details</h2>
+<div>
+  <label>name:
+    <input [(ngModel)]="glossary.name" placeholder="name">
+  </label>
+  <label>description:
+	<input [(ngModel)]="glossary.description" placeholder="description">
+  </label>  
+</div>
+<button (click)="goBack()">go back</button>
+
+<ul class="terms">
+ <li *ngFor="let term of glossary.terms">
+   <!-- TODO  <a routerLink="/glossary/{{glossary.id}}"> -->
+     <span class="badge">{{term.name}}</span> {{term.description}}
+	 <br/>
+   <!-- </a> -->
+    
+  </li>
+</ul>
+
+</div>
