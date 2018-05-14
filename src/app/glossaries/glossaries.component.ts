@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Glossary } from '../glossary';
-import { GlossaryService } from '../glossary.service';
+import {Component, OnInit} from '@angular/core';
+import {Glossary} from '../glossary';
+import {GlossaryService} from '../glossary.service';
 
 
 @Component({
@@ -11,16 +11,15 @@ import { GlossaryService } from '../glossary.service';
 export class GlossariesComponent implements OnInit {
 
   glossaries: Glossary[];
-  
-  constructor(private glossaryService: GlossaryService) { }
+
+  constructor(private glossaryService: GlossaryService) {}
 
   ngOnInit() {
-	  this.getGlossaries();
+    this.getGlossaries();
   }
 
   getGlossaries(): void {
-	this.glossaryService.getGlossaries().subscribe(glossaries => this.glossaries = glossaries);
-	}
-  
-  
+    this.glossaryService.getGlossaries().subscribe(glossaries => this.glossaries = glossaries);
+  }
+
 }
