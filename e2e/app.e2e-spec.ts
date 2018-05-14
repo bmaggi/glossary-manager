@@ -9,6 +9,6 @@ describe('glossary-manager App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect('Welcome to Glossary Manager!'.toEqual(page.getParagraphText());
+    expect('Welcome to Glossary Manager!'.toEqual(page.getParagraphText()));
   });
 });
