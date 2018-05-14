@@ -19,4 +19,4 @@ script:
   
   
 after_failure: 
-- find /home/travis/.npm/_logs/2018-05-04T15_28_50_464Z-debug.log -name '*.log' -exec cat {} \;
+- find /home/travis/.npm/_logs '*.log' -exec cat {} \;
