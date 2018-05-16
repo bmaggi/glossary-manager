@@ -6,3 +6,6 @@ Steps for the release
 - copy dist/ in alpha directory
 - push the branch 
 - check the result in this url https://bmaggi.github.io/glossary-manager/
+
+
+Alpha available here: https://bmaggi.github.io/glossary-manager/alpha/
