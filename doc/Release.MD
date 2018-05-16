@@ -5,4 +5,4 @@ Steps for the release
 - run ```ng build ```
 - copy dist/ in alpha directory
 - push the branch 
-- check the result in this url
+- check the result in this url https://bmaggi.github.io/glossary-manager/
