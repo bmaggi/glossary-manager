@@ -12,10 +12,10 @@ addons:
   chrome: stable
 
 script:
-  - npm run lint
-#  - npm run test:headless
-  - npm run build
-  - xvfb-run npm run e2e
+  - npm run lint # Check quality
+  - npm run build # Build product
+  - npm run test # Execute the unit tests via Karma.
+  - xvfb-run npm run e2e # Execute the end-to-end tests via Protractor.
   
   
 after_failure: 
