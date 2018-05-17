@@ -13,9 +13,9 @@ addons:
 
 script:
   - npm run lint # Check quality
-  - npm run build # Build product
-  - xvfb-run ng run test # Execute the unit tests via Karma.
-  - xvfb-run npm run e2e # Execute the end-to-end tests via Protractor.
+  - ng build # Build product
+  - xvfb-run ng test # Execute the unit tests via Karma.
+  - xvfb-run ng e2e # Execute the end-to-end tests via Protractor.
   
   
 after_failure: 
