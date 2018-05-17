@@ -1,11 +1,15 @@
-import { TestBed, inject } from '@angular/core/testing';
+import {TestBed, inject} from '@angular/core/testing';
 
-import { GlossaryService } from './glossary.service';
+import {MessageService} from './message.service';
+import {GlossaryService} from './glossary.service';
 
 describe('GlossaryService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [GlossaryService]
+      providers: [
+        MessageService,
+        GlossaryService
+      ]
     });
   });
 
